@@ -1,0 +1,588 @@
+<style type="text/css">
+    .timeSlot:hover {
+      background-color: #cccccc !important;
+    }
+    
+    .column {
+        display: inline-block;
+    }
+    @media only screen and (max-width: 600px) {
+      .full50 {
+        width: 50% !important;
+        float: none !important;
+        display: inline-block !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        text-align: center !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+      }
+      .full {
+        width: 100% !important;
+        float: none !important;
+        display: block !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        text-align: center !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+      }
+      .mobile-center {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: table !important;
+      }
+      .mobile-left {
+        text-align: left!important;
+        display: table !important;
+      }
+      .timeSlot {
+        width: 200px!important;
+      }
+      .date {
+        width: 200px!important;
+      }
+    }
+    @media only screen and (max-width: 450px) {
+      .timeSlot {
+        width: 135px!important;
+      }
+      .date {
+        width: 135px!important;
+      }
+    }
+    </style>
+    <div role="article" aria-roledescription="email" aria-label="email name" lang="en" style="font-size:1rem;">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; mso-cellspacing: 0px; mso-padding-alt: 0px 0px 0px 0px; max-width: 620px; margin-left: auto; margin-right: auto; border: 1px solid blue;Margin-top: 30px;">
+        <!-- Header Start -->
+            <tr title="column-mobile-stack">
+                <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 25px;">
+                    <table width="100%" cellspacing="0" cellpadding="0" align="center" border="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; mso-cellspacing: 0px; mso-padding-alt: 0px 0px 0px 0px;">
+                        <tr>
+                            <th title="column" align="center" class="full" width="58%" style="font-weight: normal; padding: 0;">
+                            <table class="mobile-center" width="100%" cellspacing="0" cellpadding="0" align="center" border="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; mso-cellspacing: 0px; mso-padding-alt: 0px 0px 0px 0px;">
+                                <tr>
+                                    <td class="mobile-left" style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <span style="color:#222233;font-family:'Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif;font-weight: bold;font-size:16px;"> Brad &amp; Sean: Meeting </span>
+                                    <br>
+                                        <span style="color:#222233;font-family:'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif;font-size:12px;">Click or tap on a time to schedule instantly<br>
+                                        Time zone: <span style="display: inline-block; margin: 0 1px 4px 0; border-radius: 3px; font-family: arial, sans-serif; line-height: 16px; text-decoration: none; white-space: nowrap; background-color: #3e86f4; color: #ffffff;">&nbsp;EDT&nbsp;</span> <a href="https://emailapps.mixmax.com/av4PtlhWr5SB/stif/6075977d040e04432e7f535c/!!!EMAIL_ADDR_ENC!!!/!!!RECIPIENT_NAME_ENC!!!?user=!!!EMAIL_ADDR_URL!!!&amp;messageId=!!!MESSAGE_ID!!!&amp;hideLogin=true" target="_blank" style="text-decoration:none;color:#3e86f4;margin-left:2px;margin-top:2px">Change</a></span>
+                                    </td>
+                                </tr>
+                            </table>
+                            </th>
+                            <th title="column" align="right" class="full" width="42%" style="font-weight: normal; padding: 0;">
+                            <table class="mobile-center" width="100%" cellspacing="0" cellpadding="0" align="right" border="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; mso-cellspacing: 0px; mso-padding-alt: 0px 0px 0px 0px;">
+                                <tr>
+                                    <td class="mobile-left" style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right;" align="right">
+                                        <a href="https://example.com/" style="background: #3e86f4; text-decoration: none; padding: 5px 10px; border-radius: 3px; display: inline-block; mso-padding-alt: 0; color: #ffffff; font-weight: bold; text-align: center; font-size: 14px; line-height: 28px; font-family: 'Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif;">
+                                        <span style="mso-text-raise:15pt;">Show me times I'm free</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            </th>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Header End -->
+                <!-- Date components start -->
+            <tr>
+                <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; mso-cellspacing: 0px; mso-padding-alt: 0px 0px 0px 0px;">
+                        <!-- Max 4 days per component -->
+                        <!-- 4 day component -->
+                        <tr>
+                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <table width="100%" cellspacing="0" cellpadding="0" align="center" border="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; mso-cellspacing: 0px; mso-padding-alt: 0px 0px 0px 0px;">
+                                <tr>
+                                    <!-- Day Start -->
+                                    <th align="center" class="column full50" width="150" valign="top" style="font-weight: normal; padding: 0;">
+                                        <table class="mobile-center" width="100%" cellspacing="0" cellpadding="0" align="center" border="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; mso-cellspacing: 0px; mso-padding-alt: 0px 0px 0px 0px;">
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="date" style="background-color: #ffffff; width: 125px; display: block; border-top: 2px solid #ddddee; border-collapse: separate; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; text-align: center; font-size: 14px; line-height: 28px; font-family: 'Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    Tues, Apr 13
+                                                    </span>
+                                                </a>
+                                                </td>
+                                        </tr>
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                        </table>
+                                    </th>
+                                    <!-- Day End -->
+    
+                                    <!-- Day Start -->
+                                    <th align="center" class="column full50" width="150" valign="top" style="font-weight: normal; padding: 0;">
+                                        <table class="mobile-center" width="100%" cellspacing="0" cellpadding="0" align="center" border="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; mso-cellspacing: 0px; mso-padding-alt: 0px 0px 0px 0px;">
+                                        <tr>
+                                            <td class="date" style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff; width: 125px; display: block; border-top: 2px solid #ddddee; border-collapse: separate; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; text-align: center; font-size: 14px; line-height: 28px; font-family: 'Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif;" width="125" bgcolor="#ffffff" align="center">
+                                                Wed, Apr​ 14
+                                            </td>
+                                        </tr>
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                        </table>
+                                    </th>
+                                    <!-- Day End -->
+    
+                                    <!-- Day Start -->
+                                    <th align="center" class="column full50" width="150" valign="top" style="font-weight: normal; padding: 0;">
+                                        <table class="mobile-center" width="100%" cellspacing="0" cellpadding="0" align="center" border="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; mso-cellspacing: 0px; mso-padding-alt: 0px 0px 0px 0px;">
+                                        <tr>
+                                            <td class="date" style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff; width: 125px; display: block; border-top: 2px solid #ddddee; border-collapse: separate; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; text-align: center; font-size: 14px; line-height: 28px; font-family: 'Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif;" width="125" bgcolor="#ffffff" align="center">
+                                                Thurs, Apr​ 15
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                        </table>
+                                    </th>
+                                    <!-- Day End -->
+    
+                                    <!-- Day Start -->
+                                    <th align="center" class="column full50" width="150" valign="top" style="font-weight: normal; padding: 0;">
+                                        <table class="mobile-center" width="100%" cellspacing="0" cellpadding="0" align="center" border="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; mso-cellspacing: 0px; mso-padding-alt: 0px 0px 0px 0px;">
+                                        <tr>
+                                            <td class="date" style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff; width: 125px; display: block; border-top: 2px solid #ddddee; border-collapse: separate; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; text-align: center; font-size: 14px; line-height: 28px; font-family: 'Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif;" width="125" bgcolor="#ffffff" align="center">
+                                                Fri, Apr​ 16
+                                            </td>
+                                        </tr>
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                        </table>
+                                    </th>
+                                    <!-- Day End -->
+    
+                                     <!-- Day Start -->
+                                     <th align="center" class="column full50" width="150" valign="top" style="font-weight: normal; padding: 0;">
+                                        <table class="mobile-center" width="100%" cellspacing="0" cellpadding="0" align="center" border="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; mso-cellspacing: 0px; mso-padding-alt: 0px 0px 0px 0px;">
+                                        <tr>
+                                            <td class="date" style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff; width: 125px; display: block; border-top: 2px solid #ddddee; border-collapse: separate; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; text-align: center; font-size: 14px; line-height: 28px; font-family: 'Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif;" width="125" bgcolor="#ffffff" align="center">
+                                                Fri, Apr​ 16
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                        <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                        <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                        <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                        <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                         <!-- Date timeSlot Start -->
+                                        <tr>
+                                            <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-bottom: 3px;">
+                                                <a class="timeSlot" href="https://example.com/" style="background-color: #efefef; width: 125px; display: block; padding-top: 2px; padding-bottom: 1px; Margin: 0 auto; mso-padding-alt: 0; border: 1px solid #ddddee; border-radius: 3px; border-collapse: separate; text-align: center; font-size: 12px; line-height: 28px; font-weight: bold; font-family: 'Segoe UI','Helvetica Neue',Helvetica,'Calibri',Arial,sans-serif; text-decoration: none; color: #1155CC;">
+                                                    <span style="mso-text-raise:5pt;">
+                                                    10:30 – 11:00a
+                                                    </span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <!-- Date timeSlot End -->
+                                        </table>
+                                    </th>
+                                    <!-- Day End -->
+    
+                                    
+                                </tr>
+                            </table>
+                            </td>
+                        </tr>
+                        <!-- Max 4 days per component -->
+                    </table>
+                </td>
+            </tr>
+        <!-- Date components end -->
+            <!-- Mixmax cta start -->
+            <tr>
+                <td style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 15px;">
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; mso-cellspacing: 0px; mso-padding-alt: 0px 0px 0px 0px;">
+                        <tr>
+                            <td valign="top" style="box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-top: 8px; font-size: 0px; text-align: left; border-top: 2px solid #ddddee;" align="left"> <a href="https://www.mixmax.com/?ref=Availability&amp;userId=606daf3c95f79a847bb32465" style="display:inline-block;vertical-align:top;font-size:0" target="_blank"> <img src="https://emailapps.mixmax.com/img/badge_mixmax.png" align="top" height="20" style="max-width: 100%; margin: 0; padding: 0; -ms-interpolation-mode: bicubic; border: none; display: block;" alt="Mixmax" border="0"> </a> <a style="color:#aab;vertical-align:top;mso-line-height-rule:exactly;padding-top:4px;display:inline-block;font-size:11px;line-height:16px;margin:0;letter-spacing:1px;padding-left:6px;text-align:left;text-decoration:none;text-transform:uppercase;font-family:'Avenir Next','Segoe UI','Calibri',Arial,sans-serif" href="https://www.mixmax.com/?ref=Availability&amp;userId=606daf3c95f79a847bb32465" target="_blank">Not using Mixmax yet?</a> </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        <!-- Mixmax cta start -->
+        </table>
+    </div>
+    
+    
